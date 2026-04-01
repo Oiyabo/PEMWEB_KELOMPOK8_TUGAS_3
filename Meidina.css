@@ -1,92 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
+.meidina-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border: none !important;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="Maulana.css">
-  <link rel="stylesheet" href="Meidina.css">
-  <script src="script.js" defer></script>
-</head>
+.greeting-card.meidina-card {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border: none !important;
+}
 
-<body>
-  <div id="greetCard-container">
-    <div class="greeting-card MaulanaR">
-      <div class="backgroundMaul">
-        <span class="b-children"></span>
-        <span class="b-children"></span>
-        <span class="b-children"></span>
-        <span class="b-children"></span>
-        <span class="b-children"></span>
-      </div>
-      <img src="img/pp.png" alt="profile picture" width="50" height="50" id="profile-picture" />
-      <div class="desc wave-container">
-        <div class="wave-text">
-          <span>M</span><span>a</span><span>u</span><span>l</span><span>a</span><span>n</span><span>a</span><span>
-          </span><span>R</span><span>a</span><span>m</span><span>a</span><span>d</span><span>h</span><span>a</span><span>n</span><span>
-          </span><span>(</span><span>2</span><span>4</span><span>1</span><span>7</span><span>0</span><span>5</span><span>1</span><span>0</span><span>6</span><span>5</span><span>)</span>
-        </div>
-      </div>
-      <div class="tmore desc">
-        <div class="dropping-texts">
-          <div>ngoding</div>
-          <div>scrolling</div>
-          <div>ngegame</div>
-        </div>
-        <div class="dropping-texts">
-          <div>ngegame</div>
-          <div>ngoding</div>
-          <div>scrolling</div>
-        </div>
-        <div class="dropping-texts">
-          <div>scrolling</div>
-          <div>ngegame</div>
-          <div>ngoding</div>
-        </div>
-      </div>
-      <div class="grid-container">
-        <a class="grid-item" href="https://www.youtube.com/@MaulanaRamadhan-rv9pe" target="_blank"><img src="img/yt.png"/></a>
-        <a class="grid-item" href="https://www.instagram.com/maulanarm148/" target="_blank"><img src="img/ig.png" /></a>
-        <a class="grid-item" href="https://www.tiktok.com/@maulana.ramadhan38" target="_blank"><img src="img/tt.svg" /></a>
-        <a class="grid-item" href="https://github.com/Oiyabo" target="_blank"><img src="img/gh.png" /></a>
-      </div>
-    </div>
+.meidina-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
 
-    <div class="greeting-card meidina-card">
-  <div class="meidina-wrapper">
-    <div class="meidina-box">
+.meidina-box {
+  width: 100%;
+  max-width: 360px;
+  background: #f35ca8 !important;
+  padding: 30px 25px;
+  border-radius: 25px;
+  text-align: center;
+  color: white !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
 
-      <img src="img/foto.png" class="meidina-profile" alt="Meidina Aulia">
+.meidina-profile {
+  width: 110px !important;
+  height: 110px !important;
+  border-radius: 50% !important;
+  border: 4px solid white !important;
+  object-fit: cover !important;
+  display: block;
+  margin: 0 auto 20px auto;
+}
 
-      <h2 class="meidina-name">Meidina Aulia</h2>
+.meidina-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: white !important;
+}
 
-      <p class="meidina-desc">Suka stargazing | Suka bengong | Suka suka</p>
+.meidina-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: white !important;
+}
 
-      <a href="https://github.com/mdinz" class="meidina-btn meidina-github" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/meidina-aulia-9b02b9308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="meidina-btn meidina-linkedin" target="_blank">LinkedIn</a>
-      <a href="https://instagram.com/meidnaaul_" class="meidina-btn meidina-instagram" target="_blank">Instagram</a>
+.meidina-btn {
+  display: block !important;
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 12px;
+  text-decoration: none !important;
+  font-weight: bold;
+  font-size: 15px;
+  color: white !important;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
 
-      <a href="#" class="meidina-btn meidina-connect">Connect Yuk</a>
+.meidina-github {
+  background: #ff3b8f !important;
+}
 
-      <h3 class="meidina-title">🎬 BAGUS KAMU PASTI SUKA</h3>
+.meidina-linkedin {
+  background: #ff267f !important;
+}
 
-      <video class="meidina-video" controls>
-        <source src="img/vid.mp4" type="video/mp4">
-      </video>
+.meidina-instagram {
+  background: #ff5ea8 !important;
+}
 
-      <p class="meidina-text">jangan lupa tidurrrrrrr</p>
-      <p class="meidina-text">bulan mei ultah</p>
+.meidina-connect {
+  background: #ff005d !important;
+  margin-top: 20px;
+}
 
-    </div>
-  </div>
-</div>
+.meidina-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
 
-    </div>
-    <div class="greeting-card "></div>
-    <div class="greeting-card "></div>
-  </div>
-</body>
+.meidina-title {
+  margin-top: 28px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
 
-</html>
+.meidina-video {
+  width: 100% !important;
+  max-width: 100%;
+  border-radius: 14px;
+  margin-bottom: 22px;
+  display: block;
+}
+
+.meidina-text {
+  margin-top: 12px;
+  font-size: 14px;
+  color: white !important;
+}
+
+@media (max-width: 480px) {
+  .meidina-box {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+
+  .meidina-name {
+    font-size: 22px;
+  }
+
+  .meidina-desc {
+    font-size: 14px;
+  }
+
+  .meidina-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .meidina-title {
+    font-size: 16px;
+  }
+
+  .meidina-text {
+    font-size: 13px;
+  }
+}
