@@ -1,7 +1,29 @@
-@keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
+.Container.Maul {
+  position: relative;
+  background-color: #00000000;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.Profile.Maul .TextP, .Social.Maul .SocName, .ConFav.Maul div, .Desc.Maul .DescText {
+  color: aliceblue;
+}
+
+.Profile.Maul, .Social.Maul, .ConFav.Maul, .Desc.Maul {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgb(0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ConFav.Maul, .Desc.Maul {
+  border-top: rgba(255, 255, 255, 0.3) solid 2px;
+  border-bottom: rgba(255, 255, 255, 0.3) solid 2px;
+}
+
+.DescText.Maul {
+  border-left: rgba(255, 255, 255, 0) solid 2px;
+  border-right: rgba(255, 255, 255, 0) solid 2px;
 }
 
 .backgroundMaul {
@@ -82,332 +104,8 @@
   transform-origin: 55vmin -45vmin;
   box-shadow: 52vmin 0 5.3vmin currentColor;
 }
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-.dropping-texts {
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  text-align: center;
-  font-size: 12px;
-  text-shadow: none;
-}
 
-.dropping-texts > div {
-  font-family: monospace;
-  display: inline-block;
-  position: relative;
-  font-size: 0px;
-  opacity: 0;
-  transform: translate(-50%, -100%);
-  position: absolute;
+.Social.Maul:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
 }
-
-.dropping-texts:nth-child(1) > div:nth-child(1) {
-  animation: roll 6s linear infinite 0s;
-}
-.dropping-texts:nth-child(1) > div:nth-child(2) {
-  animation: roll 6s linear infinite 2s;
-}
-.dropping-texts:nth-child(1) > div:nth-child(3) {
-  animation: roll 6s linear infinite 4s;
-}
-
-.dropping-texts:nth-child(2) > div:nth-child(1) {
-  animation: roll 6s linear infinite 0.5s;
-}
-.dropping-texts:nth-child(2) > div:nth-child(2) {
-  animation: roll 6s linear infinite 2.5s;
-}
-.dropping-texts:nth-child(2) > div:nth-child(3) {
-  animation: roll 6s linear infinite 4.5s;
-}
-
-.dropping-texts:nth-child(3) > div:nth-child(1) {
-  animation: roll 6s linear infinite 1s;
-}
-.dropping-texts:nth-child(3) > div:nth-child(2) {
-  animation: roll 6s linear infinite 3s;
-}
-.dropping-texts:nth-child(3) > div:nth-child(3) {
-  animation: roll 6s linear infinite 5s;
-}
-
-@keyframes roll {
-  0% {
-    font-size: 0px;
-    opacity: 0;
-  }
-
-  3% {
-    opacity: 1;
-  }
-
-  5% {
-    font-size: inherit;
-    opacity: 1;
-  }
-
-  20% {
-    font-size: inherit;
-    opacity: 1;
-  }
-
-  27% {
-    font-size: 0px;
-    opacity: 0.5;
-  }
-
-  100% {
-    font-size: 0px;
-    opacity: 0;
-  }
-}
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-.MaulanaR {
-  position: relative;
-  display: block;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  width: 50vmin;
-  height: 75vmin;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgb(0, 0, 0);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  container-type: inline-size;
-  overflow: hidden;
-}
-
-#profile-picture {
-  width: 50px;
-  height: 50px;
-  border-radius: 12%;
-  border: 3px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 30px #00f;
-}
-
-#profile-picture:hover {
-  border-color: #00f;
-  box-shadow: 0 0 30px #00f;
-  transition: all 2s ease;
-  animation: pulseBoxBlue 2s infinite ease-in-out alternate;
-}
-
-@keyframes pulseBoxBlue {
-  from {
-    box-shadow: 0 0 30px #00f;
-  }
-
-  to {
-    box-shadow:
-      0 0 60px #00f,
-      0 0 60px #00f,
-      0 0 60px #00f,
-      0 0 60px #00f;
-  }
-}
-
-.desc {
-  font-family: monospace;
-  font-weight: bolder;
-  border-radius: 12px;
-  text-shadow:
-    0 0 5px #222,
-    0 0 10px #222,
-    0 0 20px #00f,
-    0 0 30px #00f;
-  padding: 2px;
-  color: #ffffff;
-}
-
-.tmore {
-  border-bottom: rgba(255, 255, 255, 0.6) 1px solid;
-  border-top: rgba(255, 255, 255, 0.6) 1px solid;
-  padding-top: 5px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 100cqmin;
-  height: 100cqmin;
-  border-left: 2px solid rgba(255, 255, 255, 0.6);
-  border-right: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 12%;
-}
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.grid-item > img {
-  max-width: 75%;
-  max-height: 75%;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.grid-item > img:hover {
-  background: rgba(0, 127, 255, 0.2);
-  box-shadow: 0 0 20px #00f;
-  transform: scale(1.25);
-  border-radius: 12px;
-}
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-.wave-text span {
-  display: inline-block;
-  animation-play-state: paused;
-}
-.wave-text:hover span {
-  animation: wave 2s ease-in-out infinite;
-  cursor: pointer;
-}
-
-.wave-text span:nth-child(1) {
-  animation-delay: 0s;
-}
-.wave-text span:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.wave-text span:nth-child(3) {
-  animation-delay: 0.2s;
-}
-.wave-text span:nth-child(4) {
-  animation-delay: 0.3s;
-}
-.wave-text span:nth-child(5) {
-  animation-delay: 0.4s;
-}
-.wave-text span:nth-child(6) {
-  animation-delay: 0.5s;
-}
-.wave-text span:nth-child(7) {
-  animation-delay: 0.6s;
-}
-.wave-text span:nth-child(8) {
-  animation-delay: 0.7s;
-}
-.wave-text span:nth-child(9) {
-  animation-delay: 0.8s;
-}
-.wave-text span:nth-child(10) {
-  animation-delay: 0.9s;
-}
-.wave-text span:nth-child(11) {
-  animation-delay: 1s;
-}
-.wave-text span:nth-child(12) {
-  animation-delay: 1.1s;
-}
-.wave-text span:nth-child(13) {
-  animation-delay: 1.2s;
-}
-.wave-text span:nth-child(14) {
-  animation-delay: 1.3s;
-}
-.wave-text span:nth-child(15) {
-  animation-delay: 1.4s;
-}
-.wave-text span:nth-child(16) {
-  animation-delay: 1.5s;
-}
-.wave-text span:nth-child(17) {
-  animation-delay: 1.6s;
-}
-.wave-text span:nth-child(18) {
-  animation-delay: 1.7s;
-}
-.wave-text span:nth-child(19) {
-  animation-delay: 1.8s;
-}
-.wave-text span:nth-child(20) {
-  animation-delay: 1.9s;
-}
-.wave-text span:nth-child(21) {
-  animation-delay: 2s;
-}
-.wave-text span:nth-child(22) {
-  animation-delay: 2.1s;
-}
-.wave-text span:nth-child(23) {
-  animation-delay: 2.2s;
-}
-.wave-text span:nth-child(24) {
-  animation-delay: 2.3s;
-}
-.wave-text span:nth-child(25) {
-  animation-delay: 2.4s;
-}
-.wave-text span:nth-child(26) {
-  animation-delay: 2.5s;
-}
-.wave-text span:nth-child(27) {
-  animation-delay: 2.6s;
-}
-.wave-text span:nth-child(28) {
-  animation-delay: 2.7s;
-}
-.wave-text span:nth-child(29) {
-  animation-delay: 2.8s;
-}
-
-@keyframes wave {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* --------- */
-/* .MaulanaR {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-} */
