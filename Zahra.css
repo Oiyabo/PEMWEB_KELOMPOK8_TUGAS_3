@@ -1,74 +1,74 @@
 .profile {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    border: 4px solid #9a7b2f;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 4px solid #9a7b2f;
 }
 h1 {
-    margin-bottom: 0px;
-    font-size: larger;
+  margin-bottom: 0px;
+  font-size: larger;
 }
 h3 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 p {
-    font-size: 14px;
-    margin: 0px;
-    color: #32241e;
+  font-size: 14px;
+  margin: 0px;
+  color: #32241e;
 }
 .ZahraAA hr {
-    width: 100%;
-    border: none;
-    border-top: 2px solid #9a7b2f;
-    margin: 15px auto;
+  width: 100%;
+  border: none;
+  border-top: 2px solid #9a7b2f;
+  margin: 15px auto;
 }
 .btn {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    color: white;
-    font-weight: bold;
-    font-size: small;
-    text-decoration: none;
-    background-color: #6e0b00;
-    padding: 12px;
-    border-radius: 10px;
-    transition: 0.3s;
-    cursor: pointer
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+  text-decoration: none;
+  background-color: #6e0b00;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 .btn:nth-child(6) {
-    background-color: #ce4f00;
+  background-color: #ce4f00;
 }
 .btn:nth-child(6):hover {
-    background-color: #da6115;
+  background-color: #da6115;
 }
 .btn:hover {
-    background-color: #b3340f;
-    color: #ffffff;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
-    transform: translateY(-5px);
+  background-color: #b3340f;
+  color: #ffffff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
 }
 iframe {
-    width: 100%; 
-    margin-top: 0px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .ZahraAA {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    width: 50vmin;
-    min-height: 75vmin;
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    container-type: inline-size;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 50vmin;
+  min-height: 75vmin;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  container-type: inline-size;
 }
