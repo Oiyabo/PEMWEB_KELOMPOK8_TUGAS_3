@@ -3,12 +3,47 @@
   font-family: monospace;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  background-color: #ff99f7;
+  background-image:
+    radial-gradient(at 75% 2%, hsla(338, 56%, 29%, 1) 0px, transparent 50%),
+    radial-gradient(at 46% 43%, hsla(25, 56%, 29%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 32%, hsla(273, 56%, 29%, 1) 0px, transparent 50%),
+    radial-gradient(at 17% 11%, hsla(139, 56%, 29%, 1) 0px, transparent 50%),
+    radial-gradient(at 16% 77%, hsla(227, 56%, 29%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 69%, hsla(108, 56%, 29%, 1) 0px, transparent 50%),
+    radial-gradient(at 77% 52%, hsla(154, 56%, 29%, 1) 0px, transparent 50%);
+  background-size: 400% 400%;
+  animation: backgroundBody 10s forwards infinite;
+}
+
+@keyframes backgroundBody {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 .main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
 }
 
 .Container {
@@ -36,6 +71,7 @@
 
 .ImageProfile > img {
   width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -135,4 +171,77 @@
   background-color: darkgrey;
   transform: scale(1.05);
   cursor: pointer;
+}
+
+.Container.Name {
+  background-color: transparent;
+}
+
+.svg-Name {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+
+  background-color: rgba(150, 150, 150, 0.5);
+  border: rgba(255, 255, 255, 0.5) solid 2px;
+  border-radius: 25px;
+}
+
+.text-animate {
+  text-align: center;
+
+  line-height: 0;
+  background-color: gray;
+
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  fill: transparent;
+  stroke: #ffd900;
+  stroke-width: 3px;
+
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+  animation: drawLine 5s forwards;
+}
+
+.text-animate:hover {
+  stroke: #a08800;
+  fill: #ffd900;
+  stroke-width: 3px;
+  animation: drawLine2 2s infinite alternate;
+}
+
+@keyframes drawLine {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  5% {
+    stroke-dashoffset: 1000;
+  }
+  90% {
+    stroke-dashoffset: 670;
+    fill: transparent;
+    stroke-width: 3px;
+  }
+  95% {
+    fill: #ffd900;
+    stroke-width: 0;
+  }
+  100% {
+    fill: #ffd900;
+    stroke-width: 0;
+  }
+}
+@keyframes drawLine2 {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 670;
+  }
 }
