@@ -81,17 +81,17 @@
 
 .ConFav.Zahra, .Desc.Zahra {
     background-color: #ffffff;
-  border-top: rgba(209, 146, 0, 0.411) solid 2px;
-  border-bottom: rgba(209, 146, 0, 0.3) solid 2px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 5px 5px rgba(142, 112, 77, 0.671);
-  border: 1px solid rgba(194, 136, 0, 0.539);
+    border-top: rgba(209, 146, 0, 0.411) solid 2px;
+    border-bottom: rgba(209, 146, 0, 0.3) solid 2px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 5px rgba(142, 112, 77, 0.671);
+    border: 1px solid rgba(194, 136, 0, 0.539);
 }
 
 
 .DescText.Zahra {
-  border-left: rgba(255, 255, 255, 0) solid 2px;
-  border-right: rgba(255, 255, 255, 0) solid 2px;
+    border-left: rgba(255, 255, 255, 0) solid 2px;
+    border-right: rgba(255, 255, 255, 0) solid 2px;
 }
 
 .Social.Zahra {
@@ -102,10 +102,6 @@
 
 .Social.Zahra .SocName {
     color: white;
-}
-
-.Social.Zahra:nth-child(6):hover {
-    background-color: #da6115;
 }
 
 .Social.Zahra:hover {
