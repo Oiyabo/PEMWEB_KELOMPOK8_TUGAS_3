@@ -1,157 +1,235 @@
 .Container.Meidina {
   position: relative;
+  width: 99.5%;
+  height: 170px;
+  margin: 56px auto 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f6d9e5;
+  border-radius: 15px;
   overflow: hidden;
-  border: 2px solid rgba(255, 192, 203, 0.3);
-  background: linear-gradient(135deg, #ff9ecf, #ffc1da, #ffd6e8);
-  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.25);
 }
 
 .backgroundMeidina {
   position: absolute;
   inset: 0;
+  background: #f2c6d8;
   z-index: 0;
-  overflow: hidden;
 }
 
-.backgroundMeidina .bm-children {
+.bm-children {
   position: absolute;
-  display: block;
-  width: 120px;
-  height: 120px;
-  background: rgba(255, 255, 255, 0.18);
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  animation: meidinaFloat 12s infinite ease-in-out;
+  opacity: 0.25;
 }
 
-.backgroundMeidina .bm-children:nth-child(1) {
-  top: 10%;
-  left: 5%;
-  width: 90px;
-  height: 90px;
-  animation-delay: 0s;
+.bm-children:nth-child(1) {
+  top: 10px;
+  left: 100px;
+  background: #f4cade;
 }
 
-.backgroundMeidina .bm-children:nth-child(2) {
-  top: 20%;
-  right: 10%;
-  width: 140px;
-  height: 140px;
-  animation-delay: 2s;
+.bm-children:nth-child(2) {
+  bottom: 5px;
+  left: 280px;
+  background: #efbfd2;
 }
 
-.backgroundMeidina .bm-children:nth-child(3) {
-  bottom: 15%;
-  left: 15%;
-  width: 100px;
-  height: 100px;
-  animation-delay: 4s;
+.bm-children:nth-child(3) {
+  top: 40px;
+  right: 220px;
+  background: #f3c4d8;
 }
 
-.backgroundMeidina .bm-children:nth-child(4) {
-  bottom: 10%;
-  right: 8%;
-  width: 160px;
-  height: 160px;
-  animation-delay: 6s;
+.bm-children:nth-child(4) {
+  bottom: 0;
+  right: 60px;
+  background: #efbfd2;
 }
 
-.backgroundMeidina .bm-children:nth-child(5) {
-  top: 45%;
-  left: 40%;
-  width: 70px;
-  height: 70px;
-  animation-delay: 8s;
+.bm-children:nth-child(5) {
+  top: 15px;
+  left: 620px;
+  background: #f4cade;
 }
 
-@keyframes meidinaFloat {
-  0% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-20px) scale(1.08);
-  }
-  100% {
-    transform: translateY(0px) scale(1);
-  }
-}
-
-.Container.Meidina > *:not(.backgroundMeidina) {
+.Container.Meidina .Profile,
+.Container.Meidina .ConSocial,
+.Container.Meidina .ConDesc,
+.Container.Meidina .ConVid {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
-.Profile.Meidina {
-  backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 20px;
-  padding: 15px;
+.Container.Meidina .Profile {
+  width: 105px;
+  height: 145px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(180, 120, 145, 0.14);
 }
 
-.Profile.Meidina .ImageProfile img {
-  border: 4px solid rgba(255, 255, 255, 0.85);
-  box-shadow: 0 8px 18px rgba(255, 105, 180, 0.25);
+.Container.Meidina .ImageProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.Social.Meidina {
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 182, 193, 0.35);
-  border-radius: 16px;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(6px);
+.Container.Meidina .ImageProfile img {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.95);
 }
 
-.Social.Meidina:hover {
-  transform: translateY(-6px) scale(1.03);
-  background: rgba(255, 255, 255, 0.32);
-  box-shadow: 0 10px 18px rgba(255, 105, 180, 0.18);
+.Container.Meidina .ConNameNpm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
-.ConFav.Meidina {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 18px;
-  padding: 10px 14px;
-  backdrop-filter: blur(6px);
-}
-
-.ConFav.Meidina .FavText {
-  color: #a03b6b;
+.Container.Meidina .TextP {
+  font-size: 10px;
   font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  color: #8b3b65;
 }
 
-.Desc.Meidina {
-  background: rgba(255, 255, 255, 0.22);
+.Container.Meidina .ConSocial {
+  width: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.Container.Meidina .Social {
+  width: 92px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 7px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(180, 120, 145, 0.12);
+  transition: 0.3s ease;
+}
+
+.Container.Meidina .Social:hover {
+  transform: scale(1.03);
+  background: #ffffff;
+}
+
+.Container.Meidina .SocLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Container.Meidina .SocLogo img {
+  width: 14px;
+  height: 14px;
+}
+
+.Container.Meidina .SocName {
+  margin-left: 7px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #7b3658;
+}
+
+.Container.Meidina .ConDesc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  max-width: none;
+}
+
+.Container.Meidina .ConFav {
+  width: 100%;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 18px;
-  padding: 16px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 10px rgba(180, 120, 145, 0.12);
+  border: 2px solid #000;
 }
 
-.DescText.Meidina {
-  color: #7a2f53;
-  line-height: 1.8;
-  text-align: justify;
-  font-size: 15px;
+.Container.Meidina .Fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.Container.Meidina .FavText {
+  font-size: 11px;
+  font-weight: 700;
+  color: #9b3d6e;
+}
+
+.Container.Meidina .VLineBreaak {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.Container.Meidina .Desc {
+  width: 100%;
+  height: 78px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  padding: 8px 14px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(180, 120, 145, 0.12);
+  border: 2px solid #000;
+}
+
+.Container.Meidina .DescText {
+  font-size: 10px;
+  line-height: 1.45;
+  text-align: center;
+  color: #7b3658;
+}
+
+.Container.Meidina .ConVid {
+  width: 190px;
+  height: 105px;
+  flex-shrink: 0;
+}
+
+.Container.Meidina .Video {
+  width: 100%;
+  height: 100%;
 }
 
 .Container.Meidina .Video iframe {
-  border-radius: 18px;
-  box-shadow: 0 8px 22px rgba(255, 105, 180, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.35);
-}
-
-.Profile.Meidina .TextP {
-  color: #8a2d5d;
-  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.35);
-  font-weight: 700;
-}
-
-@media (max-width: 768px) {
-  .DescText.Meidina {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .Social.Meidina:hover {
-    transform: none;
-  }
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 14px rgba(180, 120, 145, 0.15);
 }
