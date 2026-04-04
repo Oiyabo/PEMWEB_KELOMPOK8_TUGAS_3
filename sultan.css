@@ -1,0 +1,267 @@
+.Container.Sultaan {
+  position: relative;
+  width: 99.5%;
+  height: 170px;
+  margin: 105px auto 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #8c8c8c;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.backgroundSultaan {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #8a8a8a, #767676);
+  z-index: 0;
+}
+
+.bs-children {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.12;
+  filter: blur(2px);
+}
+
+.bs-children:nth-child(1) {
+  width: 160px;
+  height: 160px;
+  top: -40px;
+  left: 40px;
+  background: #d7d7d7;
+}
+
+.bs-children:nth-child(2) {
+  width: 120px;
+  height: 120px;
+  bottom: -25px;
+  left: 250px;
+  background: #bfbfbf;
+}
+
+.bs-children:nth-child(3) {
+  width: 150px;
+  height: 150px;
+  top: -20px;
+  right: 240px;
+  background: #dcdcdc;
+}
+
+.bs-children:nth-child(4) {
+  width: 110px;
+  height: 110px;
+  bottom: -20px;
+  right: 60px;
+  background: #bcbcbc;
+}
+
+.bs-children:nth-child(5) {
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  left: 620px;
+  background: #e5e5e5;
+}
+
+.Container.Sultaan .Profile,
+.Container.Sultaan .ConSocial,
+.Container.Sultaan .ConDesc,
+.Container.Sultaan .ConVid {
+  position: relative;
+  z-index: 1;
+}
+
+.Container.Sultaan .ConVid {
+  width: 155px;
+  height: 88px;
+  flex-shrink: 0;
+  order: 1;
+}
+
+.Container.Sultaan .Video {
+  width: 100%;
+  height: 100%;
+}
+
+.Container.Sultaan .Video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.14);
+}
+
+.Container.Sultaan .ConDesc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  order: 2;
+}
+
+.ConFav.Sultaan {
+  width: 100%;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.08);
+  border: 2px solid #111;
+}
+
+.ConFav.Sultaan .Fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.ConFav.Sultaan .FavText {
+  font-size: 9px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.2px;
+}
+
+.ConFav.Sultaan .VLineBreaak {
+  font-size: 14px;
+  font-weight: bold;
+  color: #111;
+}
+
+.Desc.Sultaan {
+  width: 100%;
+  height: 68px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border: 2px solid #111;
+}
+
+.DescText.Sultaan {
+  font-size: 8px;
+  line-height: 1.4;
+  text-align: center;
+  color: #111;
+}
+
+.Container.Sultaan .ConSocial {
+  width: 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+  order: 3;
+}
+
+.Social.Sultaan {
+  width: 82px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.07);
+  transition: 0.25s ease;
+}
+
+.Social.Sultaan:hover {
+  transform: translateY(-1px);
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
+}
+
+.Social.Sultaan .SocLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Social.Sultaan .SocLogo img {
+  width: 12px;
+  height: 12px;
+}
+
+.Social.Sultaan .SocName {
+  margin-left: 6px;
+  font-size: 8px;
+  font-weight: 600;
+  color: #111;
+}
+
+.Profile.Sultaan {
+  width: 92px;
+  height: 122px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  order: 4;
+}
+
+.Profile.Sultaan .ImageProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.Profile.Sultaan .ImageProfile img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.95);
+}
+
+.Profile.Sultaan .ConNameNpm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.Profile.Sultaan .TextP {
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  color: #111;
+}
+
+.Container.Sultaan {
+  position: relative;
+  z-index: 2;
+}
+
+.Container.Sultaan::before {
+  content: "";
+  display: block;
+  height: 50px;
+  background: white;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
