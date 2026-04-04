@@ -1,146 +1,157 @@
-.meidina-card {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background: transparent !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  border: none !important;
+.Container.Meidina {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(255, 192, 203, 0.3);
+  background: linear-gradient(135deg, #ff9ecf, #ffc1da, #ffd6e8);
+  box-shadow: 0 10px 30px rgba(255, 105, 180, 0.25);
 }
 
-.greeting-card.meidina-card {
-  background: transparent !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-.meidina-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 20px;
-}
-
-.meidina-box {
-  width: 100%;
-  max-width: 360px;
-  background: #f35ca8 !important;
-  padding: 30px 25px;
-  border-radius: 25px;
-  text-align: center;
-  color: white !important;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+.backgroundMeidina {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   overflow: hidden;
 }
 
-.meidina-profile {
-  width: 110px !important;
-  height: 110px !important;
-  border-radius: 50% !important;
-  border: 4px solid white !important;
-  object-fit: cover !important;
+.backgroundMeidina .bm-children {
+  position: absolute;
   display: block;
-  margin: 0 auto 20px auto;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  animation: meidinaFloat 12s infinite ease-in-out;
 }
 
-.meidina-name {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 18px;
-  color: white !important;
+.backgroundMeidina .bm-children:nth-child(1) {
+  top: 10%;
+  left: 5%;
+  width: 90px;
+  height: 90px;
+  animation-delay: 0s;
 }
 
-.meidina-desc {
+.backgroundMeidina .bm-children:nth-child(2) {
+  top: 20%;
+  right: 10%;
+  width: 140px;
+  height: 140px;
+  animation-delay: 2s;
+}
+
+.backgroundMeidina .bm-children:nth-child(3) {
+  bottom: 15%;
+  left: 15%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 4s;
+}
+
+.backgroundMeidina .bm-children:nth-child(4) {
+  bottom: 10%;
+  right: 8%;
+  width: 160px;
+  height: 160px;
+  animation-delay: 6s;
+}
+
+.backgroundMeidina .bm-children:nth-child(5) {
+  top: 45%;
+  left: 40%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 8s;
+}
+
+@keyframes meidinaFloat {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.08);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.Container.Meidina > *:not(.backgroundMeidina) {
+  position: relative;
+  z-index: 2;
+}
+
+.Profile.Meidina {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.Profile.Meidina .ImageProfile img {
+  border: 4px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 18px rgba(255, 105, 180, 0.25);
+}
+
+.Social.Meidina {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 182, 193, 0.35);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.Social.Meidina:hover {
+  transform: translateY(-6px) scale(1.03);
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 10px 18px rgba(255, 105, 180, 0.18);
+}
+
+.ConFav.Meidina {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: 10px 14px;
+  backdrop-filter: blur(6px);
+}
+
+.ConFav.Meidina .FavText {
+  color: #a03b6b;
+  font-weight: 700;
+}
+
+.Desc.Meidina {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 18px;
+  padding: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 16px rgba(255, 105, 180, 0.15);
+}
+
+.DescText.Meidina {
+  color: #7a2f53;
+  line-height: 1.8;
+  text-align: justify;
   font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-  color: white !important;
 }
 
-.meidina-btn {
-  display: block !important;
-  width: 100%;
-  padding: 14px;
-  margin: 12px 0;
-  border-radius: 12px;
-  text-decoration: none !important;
-  font-weight: bold;
-  font-size: 15px;
-  color: white !important;
-  transition: 0.3s ease;
-  box-sizing: border-box;
+.Container.Meidina .Video iframe {
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(255, 105, 180, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.35);
 }
 
-.meidina-github {
-  background: #ff3b8f !important;
+.Profile.Meidina .TextP {
+  color: #8a2d5d;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.35);
+  font-weight: 700;
 }
 
-.meidina-linkedin {
-  background: #ff267f !important;
-}
-
-.meidina-instagram {
-  background: #ff5ea8 !important;
-}
-
-.meidina-connect {
-  background: #ff005d !important;
-  margin-top: 20px;
-}
-
-.meidina-btn:hover {
-  opacity: 0.88;
-  transform: translateY(-2px);
-}
-
-.meidina-title {
-  margin-top: 28px;
-  margin-bottom: 18px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white !important;
-}
-
-.meidina-video {
-  width: 100% !important;
-  max-width: 100%;
-  border-radius: 14px;
-  margin-bottom: 22px;
-  display: block;
-}
-
-.meidina-text {
-  margin-top: 12px;
-  font-size: 14px;
-  color: white !important;
-}
-
-@media (max-width: 480px) {
-  .meidina-box {
-    padding: 24px 18px;
-    border-radius: 20px;
-  }
-
-  .meidina-name {
-    font-size: 22px;
-  }
-
-  .meidina-desc {
+@media (max-width: 768px) {
+  .DescText.Meidina {
     font-size: 14px;
+    line-height: 1.6;
   }
 
-  .meidina-btn {
-    font-size: 14px;
-    padding: 12px;
-  }
-
-  .meidina-title {
-    font-size: 16px;
-  }
-
-  .meidina-text {
-    font-size: 13px;
+  .Social.Meidina:hover {
+    transform: none;
   }
 }
