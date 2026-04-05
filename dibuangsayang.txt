@@ -355,3 +355,158 @@
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 0 8px 32px rgb(0, 0, 0);
 } */
+
+
+---
+
+    <div class="Container">
+      <div class="Profile">
+        <div class="ImageProfile"><img src="img/pp.png" alt=""></div>
+        <div class="ConNameNpm">
+          <div class="TextP">Maulana Ramadhan</div>
+          <div class="TextP">2417051065</div>
+        </div>
+      </div>
+      <div class="ConSocial">
+        <a class="Social" href="https://www.youtube.com/@MaulanaRamadhan-rv9pe" target="_blank">
+          <div class="SocLogo"><img src="img/yt.png"></div>
+          <div class="SocName">Youtube</div>
+        </a>
+        <a class="Social" href="https://www.instagram.com/maulanarm148/" target="_blank">
+          <div class="SocLogo"><img src="img/ig.png"></div>
+          <div class="SocName">Instagram</div>
+        </a>
+        <div class="Social" href="https://www.tiktok.com/@maulana.ramadhan38" target="_blank">
+          <div class="SocLogo"><img src="img/tt.svg"></div>
+          <div class="SocName">Tiktok</div>
+        </div>
+        <div class="Social" href="https://github.com/Oiyabo" target="_blank">
+          <div class="SocLogo"><img src="img/gh.png"></div>
+          <div class="SocName">Github</div>
+        </div>
+      </div>
+      <div class="ConDesc">
+        <div class="ConFav">
+          <div class="Fav">
+            <div class="FavText">ngoding</div>
+          </div>
+          <div class="VLineBreaak">|</div>
+          <div class="Fav">
+            <div class="FavText">scrolling</div>
+          </div>
+          <div class="VLineBreaak">|</div>
+          <div class="Fav flexCenter">
+            <div class="FavText">ngegame</div>
+          </div>
+        </div>
+        <div class="Desc">
+          <div class="DescText">
+            Halo saya disini untuk tugas saya (tugas kelompok). saya tidak tau apa yang harus saya katakan, tapi kotak
+            ini
+            harus diisi. oiya, pakai lorem ipsum saja, ah.... tapi sudah terisi panjang juga, yasudahlah
+          </div>
+        </div>
+      </div>
+      <div class="ConVid">
+        <div class="Video"><iframe src="https://www.youtube.com/embed/VBSTL6ZNbmI" title="tmpdFtp35" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      </div>
+    </div>
+
+
+---
+
+  <!-- <div id="greetCard-container">
+    <div class="greeting-card MaulanaR">
+      <div class="backgroundMaul">
+        <span class="b-children"></span>
+        <span class="b-children"></span>
+        <span class="b-children"></span>
+        <span class="b-children"></span>
+        <span class="b-children"></span>
+      </div>
+      <img src="img/pp.png" alt="profile picture" width="50" height="50" id="profile-picture" />
+      <div class="desc wave-container">
+        <div class="wave-text">
+          <span>M</span><span>a</span><span>u</span><span>l</span><span>a</span><span>n</span><span>a</span><span>
+          </span><span>R</span><span>a</span><span>m</span><span>a</span><span>d</span><span>h</span><span>a</span><span>n</span><span>
+          </span><span>(</span><span>2</span><span>4</span><span>1</span><span>7</span><span>0</span><span>5</span><span>1</span><span>0</span><span>6</span><span>5</span><span>)</span>
+        </div>
+      </div>
+      <div class="tmore desc">
+        <div class="dropping-texts">
+          <div>ngoding</div>
+          <div>scrolling</div>
+          <div>ngegame</div>
+        </div>
+        <div class="dropping-texts">
+          <div>ngegame</div>
+          <div>ngoding</div>
+          <div>scrolling</div>
+        </div>
+        <div class="dropping-texts">
+          <div>scrolling</div>
+          <div>ngegame</div>
+          <div>ngoding</div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <a class="grid-item" href="https://www.youtube.com/@MaulanaRamadhan-rv9pe" target="_blank"><img
+            src="img/yt.png" /></a>
+        <a class="grid-item" href="https://www.instagram.com/maulanarm148/" target="_blank"><img src="img/ig.png" /></a>
+        <a class="grid-item" href="https://www.tiktok.com/@maulana.ramadhan38" target="_blank"><img
+            src="img/tt.svg" /></a>
+        <a class="grid-item" href="https://github.com/Oiyabo" target="_blank"><img src="img/gh.png" /></a>
+      </div>
+    </div>
+    <div class="greeting-card meidina-card">
+      <div class="meidina-wrapper">
+        <div class="meidina-box">
+
+          <img src="img/foto.png" class="meidina-profile" alt="Meidina Aulia">
+
+          <h2 class="meidina-name">Meidina Aulia</h2>
+
+          <p class="meidina-desc">Suka stargazing | Suka bengong | Suka suka</p>
+
+          <a href="https://github.com/mdinz" class="meidina-btn meidina-github" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/meidina-aulia-9b02b9308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="meidina-btn meidina-linkedin" target="_blank">LinkedIn</a>
+          <a href="https://instagram.com/meidnaaul_" class="meidina-btn meidina-instagram" target="_blank">Instagram</a>
+
+          <a href="#" class="meidina-btn meidina-connect">Connect Yuk</a>
+
+          <h3 class="meidina-title">🎬 BAGUS KAMU PASTI SUKA</h3>
+
+          <video class="meidina-video" controls>
+            <source src="img/vid.mp4" type="video/mp4">
+          </video>
+
+          <p class="meidina-text">jangan lupa tidurrrrrrr</p>
+          <p class="meidina-text">bulan mei ultah</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="greeting-card ZahraAA">
+      <img class="profile" src="img/foto_zahra.jpeg" alt="Foto Profil">
+      <h1>ZAHRA AYU AZIZAH</h1>
+      <p class="zahra-desc">zahraayzzh@gmail.com | 085783392040</p>
+      <hr>
+
+      <a class="btn" href="https://github.com/Zahra-ayu" target="_blank"> GitHub </a>
+      <a class="btn" href="https://www.linkedin.com/in/zahra-ayu-azizah-7303a43b8/" target="_blank"> LinkedIn </a>
+      <a class="btn" href="https://www.instagram.com/zhraayzzh?igsh=ZWhsZ3Y1anRiNDVu" target="_blank"> Instagram </a>
+      <a class="btn" href="https://x.com/zahraaazz110758" target="_blank"> Twitter </a>
+
+      <h3>🍂 Lagu Enak Untuk Galau 🍂</h2>
+      <iframe src="https://www.youtube.com/embed/kFp-2UxBiYE?si=gC96oU6awwSrtpnJ">
+      </iframe>
+
+      <p>Wajib dengerin!!!!!!!!!!</p>
+      <p>Mau tidur pls</p>
+
+    </div>
+    <div class="greeting-card "></div>
+  </div> -->
